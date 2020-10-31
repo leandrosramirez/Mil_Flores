@@ -1,3 +1,5 @@
+https://raw.githubusercontent.com/leandrosramirez/Mil_Flores/main/MIL_FLORES.png
+
 # Mil_Flores
 Informes gráficos de los registros estándares de moodle para aulas.
 
