@@ -39,7 +39,7 @@
   float: left;
 }
 
-#CursoVxP{
+#cursovxp{
   color: black;
   width: 100% !important;
   /*background-color: beige !important;*/
@@ -47,7 +47,7 @@
   text-align: center;
 }
 
- #CursoVxP .axis.x .tick text {
+ #cursovxp .axis.x .tick text {
     color:black;
     text-decoration-color: black;
     text-anchor: end;

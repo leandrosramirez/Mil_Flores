@@ -1,12 +1,12 @@
-var SeleccionDia  = new dc.SelectMenu('#SeleccionDia'), //BANDERA DE IDENTIFICACIÓN
-    SeleccionMes  = new dc.SelectMenu('#SeleccionMes'), //BANDERA DE IDENTIFICACIÓN
-    SeleccionAnio = new dc.SelectMenu('#SeleccionAnio'), //BANDERA DE IDENTIFICACIÓN
-    SeleccionEvento = new dc.SelectMenu('#SeleccionEvento'),
+var selecciondia  = new dc.SelectMenu('#selecciondia'), //BANDERA DE IDENTIFICACIÓN
+    seleccionmes  = new dc.SelectMenu('#seleccionmes'), //BANDERA DE IDENTIFICACIÓN
+    seleccionanio = new dc.SelectMenu('#seleccionanio'), //BANDERA DE IDENTIFICACIÓN
+    seleccionevento = new dc.SelectMenu('#seleccionevento'),
 
-    chart   = new dc.BarChart("#graficoprovincia");
-    CursoVxP   = new dc.BarChart("#CursoVxP");
-    Contexto   = new dc.RowChart("#Contexto");
-    Torta = new dc.PieChart("#Torta");
+    graficotorta   = new dc.PieChart("#graficoxregiones");
+    cursovxp   = new dc.BarChart("#cursovxp");
+    contexto   = new dc.RowChart("#contexto");
+    torta = new dc.PieChart("#torta");
     edad = new dc.PieChart("#edad");
 
 
@@ -65,7 +65,7 @@ edad
     });
 
 //grafico
-Torta
+torta
     .width(668)
     .height(380)
     .slicesCap(6)
@@ -85,7 +85,7 @@ Torta
     
 
     // Libreria D3.js
-  CursoVxP
+  cursovxp
     .width(1200)
     .height(300)
     .x(d3.scaleBand())
@@ -100,7 +100,7 @@ Torta
     .group(agrupamientoxevento)
     .margins({left: 100, top: 20, right: 0, bottom: 100});
 
-    Contexto
+    contexto
     .width(600)
     .height(400)
     .x(d3.scaleLinear().domain())
@@ -111,37 +111,39 @@ Torta
 
 
     // Libreria D3.js
-  chart
+  graficotorta
     .width(600)
     .height(400)
-    .x(d3.scaleBand())
-    .xUnits(dc.units.ordinal)
-    .brushOn(false)
-    .centerBar(false)
-    .elasticY(true)
-    .elasticX(true)
-    .yAxisLabel("Actividad")
-    .xAxisLabel("Regiones")
+    .slicesCap(6)
+    .innerRadius(100)
+    //.x(d3.scaleBand())
+    //.xUnits(dc.units.ordinal)
+    //.brushOn(false)
+    //.centerBar(false)
+    //.elasticY(true)
+    //.elasticX(true)
+    //.yAxisLabel("Actividad")
+    //.xAxisLabel("Regiones")
     .dimension(regionesDim)
     .group(agrupamientoXProvincia)
-    .margins({left: 100, top: 20, right: 0, bottom: 100});
+    //.margins({left: 100, top: 20, right: 0, bottom: 100});
 
 
-   SeleccionAnio
+   seleccionanio
     .dimension(anioDimension)
     .group(anioDimension.group())
     .controlsUseVisibility(false)
     //.multiple(true)
     //.numberVisible(15);
 
-   SeleccionMes
+   seleccionmes
     .dimension(mesDimension)
     .group(mesDimension.group())
     .controlsUseVisibility(false)
     .multiple(true)
     .numberVisible(6);
 
-   SeleccionDia
+   selecciondia
     .dimension(diaDimension)
     .group(diaDimension.group())
     .controlsUseVisibility(false)
@@ -151,21 +153,21 @@ Torta
 
 
 
-    SeleccionEvento
+    seleccionevento
     .dimension(regionesDim)
     .group(regionesDim.group())
     .controlsUseVisibility(false)
     //.multiple(true)
     //.numberVisible(6);
 
-    chart.render();
-    CursoVxP.render();
-    SeleccionAnio.render();
-    SeleccionMes.render();
-    SeleccionDia.render();
-    SeleccionEvento.render();
-    Contexto.render();
-    Torta.render();
+    graficotorta.render();
+    cursovxp.render();
+    seleccionanio.render();
+    seleccionmes.render();
+    selecciondia.render();
+    seleccionevento.render();
+    contexto.render();
+    torta.render();
     edad.render();
 });
 
