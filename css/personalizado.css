@@ -1,0 +1,76 @@
+/*!
+ * Bootstrap v2.1.1
+ *
+ * Copyleft 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+ .container-fluid{
+  background-color: beige !important;
+}
+#SeleccionDia{
+  width: 25% !important;
+  background-color: beige !important;
+  float: left;
+}
+#SeleccionMes{
+  width: 25% !important;
+  background-color: beige !important;
+  float: left;
+}
+
+#SeleccionAnio{
+  width: 25% !important;
+  background-color: beige !important;
+  float: left;
+}
+
+#SeleccionEvento{
+  width: 100% !important;
+  /*background-color: beige !important;*/
+  float: left;
+}
+
+#graficoprovincia{
+  width: 50% !important;
+  /*background-color: beige !important;*/
+  float: left;
+}
+
+#CursoVxP{
+  color: black;
+  width: 100% !important;
+  /*background-color: beige !important;*/
+  float: left;
+  text-align: center;
+}
+
+ #CursoVxP .axis.x .tick text {
+    color:black;
+    text-decoration-color: black;
+    text-anchor: end;
+    transform: rotate(-60deg) translate(-10px,-12px);
+  }
+
+
+
+#Contexto {
+  width: 50% !important;
+  /*background-color: beige !important;*/
+  float: left;
+  text-align: center;
+}
+ #Contexto .axis.x .tick text {
+    text-anchor: end;
+    transform: rotate(-60deg) translate(-10px,-12px);
+  }
+
+ /* #Torta{
+    background-color: beige !important;
+  }*/
+
+  /*#edad{
+    background-color: beige !important;
+  }*/

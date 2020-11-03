@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es" class="bg-white">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Informe de Actividad</title>
+
+   
+    <!-- Archivos para gráficar-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/personalizado.css">
+    <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+    
+
+    <!-- Archivos: Fuente, Poncho+BS4, Íconos Font Awesome, Íconos Poncho -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css">
+
+    <style>
+    #imagen{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;}
+    </style>
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <style>body {font-family: 'Encode Sans', sans-serif;}h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .btn {font-weight:700 !important;}</style>
+    -->
+
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet" rel="stylesheet">
+    <style>body {font-family: 'Source Sans Pro', sans-serif;}h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .btn {font-weight:700 !important;}</style>
+    -->
+
+  </head>
+
+  <body>    
+    <a class="sr-only sr-only-focusable" href="#main">Saltear navegación</a>
+
+    <nav class="navbar navbar-expand-md navbar-poncho bg-white ">
+
+      <div class="container" >
+
+        <button class="navbar-toggler text-primary" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa fa-navicon pt-1"><span class="sr-only">Menú</span></i></span>
+        </button>
+        
+        <a id="imagen" href="https://aula.cultura.gob.ar/"><img class="img-fluid" src="img/aula-cultura-zocalo-color.png" id="imagen"></a>
+
+      </div>
+
+    </nav>
+
+    <main role="main" id="main" class="pb-5">
+
+      <!-- Jumbotron --->
+      
+      <div class="jumbotron jumbotron-poncho bg-dark text-white text-center rounded-0 py-5 mb-5" style="background-image: url(https://www.datossociales.com/examples/MdCInformes/img/portadaNoa2.png);"></div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <h1></h1>
+                <p></br>
+              </div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+      
+
+      <!-- Fin Jumbotron -->
+
+      <div class=".container-fluid">
+
+        <!-- Listado de tarjetas -->
+        
+        <div class="row mb-5">
+
+          <div class="col-12">
+
+            <h2 class="row justify-content-center">Informes de Actividad de GCP</h2>
+            
+          
+            <div class="card-deck">
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p class="h5 card-title">Actividad de los cursos desde su inicio</p>
+                  <p class="card-text">Se toma como Actividad a las siguientes acciones: Mensaje Creado (Foro) / Se ha enviado una entrega (Tarea). Puede hacer click en las fechas elegidas para filtrar. Caso contrario se muestran todos los registros.</p>
+                  <div id="CursoVxP" class=""></div>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="card-deck">
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p class="h5 card-title">Actividad de los cursos por Regiones</p>
+                  <p class="card-text">Se muestra la cantidad de Eventos de Actividad que hubo por Región</p>
+                  <div id="graficoprovincia" class=""></div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p class="h5 card-title">Cantidad de interacciones en el Aula Virtual </p>
+                  <p class="card-text">Desglose de las actividades por Temas de Foros y Tareas.</p>
+                  <div id="Contexto" class=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-deck">
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p class="h5 card-title">Porcentaje de géneros habitando el aula</p>
+                  <p class="card-text">Indica la diversidad de géneros en el programa de GCP-NOA</p>
+                  <div id="Torta" class=""></div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p class="h5 card-title">Porcentaje de población etaria habitando el aula</p>
+                  <p class="card-text">Indica la diversidad étarea en el programa de GCP-NOA</p>
+                  <div id="edad" class=""></div>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+          </div>
+
+        </div>
+
+        <!-- Fin de Listado de tarjetas -->
+      </div>
+      <div class="left-col col-4"><h2><a href="https://www.datossociales.com/examples/MdCInformes">Volver al Inicio</a></h2></div>
+      </div>
+    </main>
+
+    <footer class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+         <div class="left-col col-4" ><p><a href="https://www.cultura.gob.ar/"><img class="img-fluid" src="img/mdc.png" alt="Ministerio de Cultura de la Nación" ></a>
+          </div>
+          <div class="col">
+            <p><h4>Sedes</h4><br>Av Alvear 1690, [C1014AAQ]<br>
+              Ciudad Autónoma de Buenos Aires<br>+54 (011) 4129.2400<br>Adolfo Alsina 465, [C1087AAE]<br>
+              Ciudad Autónoma de Buenos Aires<br>+54 (011) 4129.2400<br>Adolfo Alsina 1169, [C1088AAE]<br>
+              Ciudad Autónoma de Buenos Aires<br>+54 (011) 4129.2400<br>
+          </p>
+            
+          </div>
+          <div class="col">
+           <p><a href="https://aula.cultura.gob.ar/"><img src="img/Aula-Cultura-identidad-color.png" ></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Archivos: Jquery, Bootstrap.js -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="js/crossfilter.js"></script>
+    <script type="text/javascript" src="js/dc.js"></script>
+    <script type="text/javascript" src="js/scriptgcp_noa1.js"> </script>
+    
+  </body>
+</html>
